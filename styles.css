@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: black;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none; /* Supprime les puces par défaut */
+    padding: 0;
+}
+
+header {
+    background-color: #e9e2d1e3;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 244px;
+    height: 244px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: inherit; 
+    text-decoration: underline; 
+}
+
+h1, h2 {
+    font-family: 'Cardo', serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+    width: 33%;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > p {
+    text-align: center;
+    margin-bottom: 15px;
+    width: 33%;
+    font-weight: 300;
+}
+
+section ul li::before {
+    content: "✔"; 
+    margin-right: 8px;
+}
+
+.section_1, .section_3 {
+    background-color: #f2ede7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
+
+button {
+    background-color: #e9e2d1e3; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* Articles pour les services */
+section div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 500px;
+}
+
+/* Utilisation de CSS Grid pour l'alignement */
+.content-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    gap: 20px;
+    align-items: center; /* Centre le texte verticalement par rapport à l'image */
+    margin-bottom: 20px;
+    height: 300px; /* Hauteur de la ligne en fonction de l'image */
+}
+
+/* Alignement des listes et des images */
+.row-1 ul, .row-2 ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    justify-self: center; /* Centre la liste horizontalement */
+}
+
+.row-1 img, .row-2 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    justify-self: center; /* Centre l'image horizontalement */
+}
+
+blockquote p {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+blockquote cite {
+    display: block; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #e9e2d1e3;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+footer iframe {
+    margin-top: 15px;
+    height: 300px;
+}
+
+/* Media Query pour les tablettes */
+@media (max-width: 768px) {
+    /* Passe chaque ligne en disposition verticale */
+    .content-row {
+        grid-template-columns: 1fr; /* Une seule colonne pour les tablettes */
+        height: auto;
+    }
+
+    .content-row img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .content-row ul {
+        text-align: center;
+    }
+}
+
+/* Media Query pour les mobiles */
+@media (max-width: 480px) {
+    .content-row img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .content-row ul {
+        width: 100%;
+        text-align: center;
+    }
+}
