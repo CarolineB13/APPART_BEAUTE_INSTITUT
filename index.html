@@ -73,28 +73,22 @@
         <section class="section_3">
             <h2>Une expérience aboutie</h2>
             <p>Notre gamme complète de services professionnels est spécialement conçue pour satisfaire les besoins variés des particuliers en matière de beauté et de bien-être.</p>
-            <div>
-                <div class="grid-container">
-                    <div class="content-row row-1">
-                        <ul>
-                            <li>Expertise en soins traditionnels et modernes</li>
-                            <li>Approche personnalisée : chaque prestation varie en fonction des besoins spécifiques des clients</li>
-                            <li>Connaissance approfondie des produits utilisés</li>
-                        </ul>
-                        <img src="IMAGES/CHAPEAU.jpeg" alt="chapeau de paille sur un fauteuil">
-                    </div>
-                    <div class="content-row row-2">
-                        <img src="IMAGES/PERLE.jpeg" alt="perle nacrée">
-                        <ul>
-                            <li>Empathie et écoute attentive</li>
-                            <li>Compétence technique</li>
-                            <li>Professionnalisme et discrétion</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                
-            </div>
+            
+            <div class="grid-container">
+                <ul>
+                    <li>Expertise en soins traditionnels et modernes</li>
+                    <li>Approche personnalisée : chaque prestation varie en fonction des besoins spécifiques des clients</li>
+                    <li>Connaissance approfondie des produits utilisés</li>
+                </ul>
+                <img src="IMAGES/CHAPEAU.jpeg" alt="chapeau de paille sur un fauteuil">
+                <img src="IMAGES/PERLE.jpeg" alt="perle nacrée">
+                <ul>
+                    <li>Empathie et écoute attentive</li>
+                    <li>Compétence technique</li>
+                    <li>Professionnalisme et discrétion</li>
+                </ul>
+            </div>       
+        
         </section>
             <blockquote>
                 <p>"Le bien-être de l’âme réside dans le bien-être du corps."</p>
@@ -102,31 +96,43 @@
             </blockquote>
     </main>
     <footer itemscope itemtype="https://schema.org/LocalBusiness">
-        <div>
-            <p itemprop="name"><strong>APPART & BEAUTE INSTITUT</strong></p>
-            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                <span itemprop="streetAddress">17 Rue de L’Audience</span><br>
-                <span itemprop="postalCode">13011</span> 
-                <span itemprop="addressLocality">Marseille</span><br>
-                <span itemprop="addressCountry">France</span>
-            </p>
-            <p>Téléphone : <span itemprop="telephone">06 20 62 09 73</span></p>
-            <meta itemprop="url" content="https://www.appartbeauteinstitut.com" />
+        <div class="footer-top">
+            <div>
+                <p itemprop="name"><strong>APPART & BEAUTE INSTITUT</strong></p>
+                <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="streetAddress">17 Rue de L’Audience</span><br>
+                    <span itemprop="postalCode">13011</span> 
+                    <span itemprop="addressLocality">Marseille</span><br>
+                    <span itemprop="addressCountry">France</span>
+                </p>
+                <p>Téléphone : <span itemprop="telephone">06 20 62 09 73</span></p>
+                <meta itemprop="url" content="https://www.appartbeauteinstitut.com" />
+            </div>
+            
+            <!-- Intégration de la carte Google Maps avec Schema.org -->
+            <div itemprop="hasMap" itemscope itemtype="https://schema.org/Map">
+                <link itemprop="url" href="https://www.google.com/maps/place/17+Rue+de+L'Audience,+13011+Marseille" />
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8349711907917!2d5.482369476040143!3d43.29677757541041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bc2253612d4b%3A0x5431560067fa6374!2s17%20Rue%20de%20l'Audience%2C%2013011%20Marseille!5e0!3m2!1sfr!2sfr!4v1720211452970!5m2!1sfr!2sfr" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     
-        <!-- Intégration de la carte Google Maps avec Schema.org -->
-        <div itemprop="hasMap" itemscope itemtype="https://schema.org/Map">
-            <link itemprop="url" href="https://www.google.com/maps/place/17+Rue+de+L'Audience,+13011+Marseille" />
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8349711907917!2d5.482369476040143!3d43.29677757541041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bc2253612d4b%3A0x5431560067fa6374!2s17%20Rue%20de%20l'Audience%2C%2013011%20Marseille!5e0!3m2!1sfr!2sfr!4v1720211452970!5m2!1sfr!2sfr" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <!-- Section pour Instagram et Mentions Légales -->
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/appartbeaute_institut/" target="_blank" aria-label="Instagram de Appart & Beauté Institut">
+                <img src="IMAGES/instagram-logo.png" alt="Instagram logo" width="30" height="30">
+                Instagram
+            </a>
+            <a href="mentions-legales.html">Mentions légales</a>
         </div>
     </footer>
+    
 </body>
 </html>
