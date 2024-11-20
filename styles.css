@@ -158,7 +158,7 @@ article {
 article img {
     margin-bottom: 10px;
     border-radius: 8px;
-    height: 500px;
+    height: 400px;
 }
 
 .section_3 > p {
@@ -250,13 +250,13 @@ footer iframe {
     height: 300px;
 }
 
-article img {
-    border-radius: 8px;
-}
-
 .footer-bottom img {
     border-radius: 0;
     margin-right: 8px;
+}
+.footer-widget {
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Media Queries */
@@ -330,14 +330,19 @@ article img {
     h2 {
         font-size: 1.3em;
     }
+
+    article img {
+        height: 400px;
+    }
     .grid-container img {
         width: 100%;
         max-width: 200px;
-        height: auto;
+        height: 200px;
     }
 
     .grid-container ul {
         text-align: center;
+        font-size: 0.8em;
     }
     .footer-top div,
     .footer-bottom {
